@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main-header {
   background-color: #272a31;
 }
@@ -167,27 +171,32 @@
   background-color: #000;
   justify-content: center;
   text-align: center;
-  margin-top: 0;
+  border: 1px solid #000;
 }
 
 .main-container h2 {
   text-align: center;
   color: #fff;
   margin: 20px;
+  margin-top: 20px;
+  padding: 20px 0;
 }
 
+/* 
 .logo {
   background-color: #272a31;
   border: #272a31;
   color: #272a31;
-}
+} */
 
 .main-list {
   display: flex;
   flex-direction: row;
   background-color: #272a31;
   z-index: 1;
-  margin: 5px;
+  border: 2px solid #272a31;
+  width: 96%;
+  margin: 10px 2%;
 }
 
 /* .main-list2 {
@@ -222,8 +231,31 @@
   margin: 5px;
 } */
 
-.main span {
+.main-list img {
+  width: 100px;
+}
+
+.main-list span {
   color: #ec5242;
+  padding: 25px 10px;
+  margin: 10px 0;
+}
+
+.main-list p {
+  padding: 10px;
+  margin: 10px 0;
+  text-align: start;
+}
+
+.main-list:hover {
+  border: 3px solid #fff;
+  transition: 0.8s all ease-out;
+  box-shadow:
+    0 5px 10px rgba(222, 222, 222, 0.82),
+    0 5px 10px rgba(222, 222, 222, 0.82),
+    0 5px 10px rgba(222, 222, 222, 0.82),
+    0 5px 10px rgba(222, 222, 222, 0.82);
+  cursor: pointer;
 }
 
 #main-btn {
@@ -317,11 +349,11 @@
   display: none;
 }
 
-.footer-container {
+.partner-container {
   display: none;
 }
 
-.footer h4 {
+.partners h4 {
   display: none;
 }
 
@@ -344,11 +376,6 @@
     display: flex;
     padding: 0 5%;
   }
-
-  /* .nav-menu li:nth-child(6) {
-    border: 2px solid red;
-    padding-bottom: 0;
-  } */
 
   .nav-items {
     list-style: none;
@@ -373,40 +400,74 @@
   .header {
     font-size: 40px;
     padding-left: 30px;
-    text-align: center;
-    justify-content: space-between;
   }
 
+  .subtitle {
+    font-size: 35px;
+    margin-left: 30px;
+    margin-top: 80px;
+  }
+
+  .header h1 {
+    font-size: 55px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  #header-text {
+    width: 70%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  #header-date {
+    margin-left: 50px;
+    font-size: 40px;
+  }
+
+  .header h6 {
+    margin-left: 50px;
+  }
+
+  /*
   #header-text {
     font-size: 25px;
     background-color: #d3d3d3;
     margin: 25px;
     padding-left: 10px;
     text-align: center;
-  }
+  } */
 
   .main-container {
     height: auto;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .main {
     display: flex;
     flex-direction: row;
+    margin: 20px 5%;
   }
 
   .logo {
     background-color: #272a31;
   }
 
-  .main-list1 {
+  .main-list {
     display: flex;
     flex-direction: column;
     margin: 5px;
+    text-align: start;
+    align-items: center;
+    padding: 10px 0;
   }
 
-  .main-list2 {
+  .main-list p {
+    text-align: center;
+  }
+
+  /* .main-list2 {
     display: flex;
     flex-direction: column;
     margin: 5px;
@@ -422,17 +483,17 @@
     display: flex;
     flex-direction: column;
     margin: 5px;
-  }
+  } */
 
   #mobile-link {
     display: none;
   }
 
-  .main-list5 {
+  /* .main-list5 {
     display: flex;
     flex-direction: column;
     margin: 5px;
-  }
+  } */
 
   #link {
     justify-content: center;
@@ -521,32 +582,49 @@
     display: none;
   }
 
-  .footer {
+  .partners {
     font-size: 30px;
     font-weight: 700;
-    margin: 30px;
     width: 100%;
     padding: 30px;
     color: #d3d3d3;
     background-color: #272a31;
   }
 
-  .footer h4 {
+  .partners h4 {
     justify-content: center;
     align-items: center;
     display: flex;
   }
 
-  .footer-container {
+  .partner-container {
     display: flex;
     margin: 0 30px 0 30px;
     gap: 80px;
     justify-content: center;
   }
 
-  .footer-container li {
+  .partner-container li {
     list-style: none;
     color: #d3d3d3;
     padding: 20px;
+  }
+
+  .footer-container {
+    background-color: #d3d3d3;
+    padding: 0 30px 0 30px;
+    gap: 80px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  .footer-container img {
+    width: 120px;
+    height: 80px;
+  }
+
+  .sub-container {
+    padding: 30px;
   }
 }
