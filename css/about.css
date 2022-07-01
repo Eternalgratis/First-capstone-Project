@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;700&family=Poppins&display=swap');
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.desktop-nav ul {
+  list-style: none;
+}
+
+.menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #ec5242;
+  margin: 20px;
+}
+
+.header h1 {
+  margin-left: 0;
+  width: 100%;
+  font-size: 40px;
+  padding: 5px 16px;
+  background-size: cover;
+  background-position: 20% 20%;
+  font-family: 'Lato', sans-serif;
+  color: #ec5242;
+  align-self: center;
+  max-width: 900px;
+}
+
+.header p {
+  font-size: 20px;
+  text-align: start;
+  background-color: #d3d3d3;
+  border: 3px solid #fff;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px;
+  box-shadow:
+    0 5px 5px rgba(222, 222, 222, 0.82),
+    0 5px 5px rgba(222, 222, 222, 0.82);
+}
+
+.further-question {
+  margin: 20px;
+}
+
+.header h5 {
+  font-size: 20px;
+  color: gray;
+}
+
+.header a {
+  color: #272a31;
+  font-weight: 700;
+}
+
+.second-header {
+  text-align: center;
+}
