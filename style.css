@@ -523,6 +523,10 @@ body {
     display: none;
   }
 
+  .see {
+    color: #fff;
+  }
+
   .partners {
     font-size: 30px;
     font-weight: 700;
