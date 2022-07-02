@@ -1,74 +1,72 @@
-const menu = document.querySelector(".hamburger");
-const desktopnav = document.querySelector(".desktop-nav");
+const menu = document.querySelector('.hamburger');
+const desktopnav = document.querySelector('.desktop-nav');
 // ............ Adding click event to the hamburger.........................
-menu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-  desktopnav.classList.toggle("active");
+menu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  desktopnav.classList.toggle('active');
 });
-document.querySelectorAll(".ham-item").forEach((n) =>
-  n.addEventListener("click", () => {
-    menu.classList.remove("active");
-    desktopnav.classList.remove("active");
-  })
-);
+document.querySelectorAll('.ham-item').forEach((n) => n.addEventListener('click', () => {
+  menu.classList.remove('active');
+  desktopnav.classList.remove('active');
+}));
 // ............Adding event to close icon on menu.............................
-document.querySelector(".close-icon").addEventListener("click", () => {
-  menu.classList.remove("active");
-  desktopnav.classList.remove("active");
+document.querySelector('.close-icon').addEventListener('click', () => {
+  menu.classList.remove('active');
+  desktopnav.classList.remove('active');
 });
 
 // Objects
 const projectContainerArr = [
   {
-    headline: "Featured Speakers",
-    image: "../images/ministersssss.jfif",
-    name: "Eternalgratis",
-    Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    headline: 'Featured Speakers',
+    image: '../images/ministersssss.jfif',
+    name: 'Eternalgratis',
+    Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
-      "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
+      'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
   {
-    headline: "Featured Speakers",
-    image: "../images/ministers.jfif",
-    name: "Eternalgratis",
-    Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    headline: 'Featured Speakers',
+    image: '../images/ministers.jfif',
+    name: 'Eternalgratis',
+    Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
-      "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
+      'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
   {
-    headline: "Featured Speakers",
-    image: "../images/ministerss.jfif",
-    name: "Eternalgratis",
-    Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    headline: 'Featured Speakers',
+    image: '../images/ministerss.jfif',
+    name: 'Eternalgratis',
+    Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
-      "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
+      'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
   {
-    headline: "Featured Speakers",
-    image: "../images/ministersss.jfif",
-    name: "Eternalgratis",
-    Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    headline: 'Featured Speakers',
+    image: '../images/ministersss.jfif',
+    name: 'Eternalgratis',
+    Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
-      "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
+      'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
   {
-    headline: "Featured Speakers",
-    image: "../images/ministerssss.jfif",
-    name: "Eternalgratis",
-    Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    headline: 'Featured Speakers',
+    image: '../images/ministerssss.jfif',
+    name: 'Eternalgratis',
+    Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
-      "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
+      'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
   {
-    headline: "Featured Speakers",
-    image: "../images/ministersssss.jfif",
-    name: "Eternalgratis",
-    Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    headline: 'Featured Speakers',
+    image: '../images/ministersssss.jfif',
+    name: 'Eternalgratis',
+    Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
-      "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
+      'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
 ];
-const featureSection = document.querySelector(".all-viewmore");
+const featureSection = document.querySelector('.all-viewmore');
 for (let i = 0; i < projectContainerArr.length; i += 1) {
   featureSection.innerHTML = `
   <h3>${projectContainerArr[0].headline}</h3>

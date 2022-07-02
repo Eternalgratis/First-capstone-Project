@@ -8,7 +8,6 @@
 }
 
 .main-header {
-  /* background-color: #272a31; */
   display: block;
 }
 
@@ -89,6 +88,7 @@
 .desktop-nav.active {
   transform: translateX(0%);
 }
+
 .nav-items a {
   text-decoration: none;
   color: #000;
@@ -100,7 +100,6 @@
   font-size: 20px;
   color: #000;
 }
-
 
 .header {
   background-color: rgb(39, 42, 49, 0.2);
@@ -185,17 +184,17 @@
   text-align: center;
 }
 
-
 .logo-details {
   display: flex;
+  justify-content: center;
   border: 1px solid #d3d3d3;
   margin: 50px 7%  20px 7%;
   padding: 0;
 }
 
 .logo-details img {
-  width: 220px;
-  height: 250px;
+  width: 50%;
+  height: 200px;
 }
 
 .logo-details h6 {
