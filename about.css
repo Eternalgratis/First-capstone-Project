@@ -187,14 +187,16 @@
 .logo-details {
   display: flex;
   justify-content: center;
-  border: 1px solid #d3d3d3;
-  margin: 50px 7%  20px 7%;
+  border: 2px solid #d3d3d3;
+  margin: 50px 10%  20px 10%;
+  width: 80%;
   padding: 0;
 }
 
 .logo-details img {
-  width: 50%;
-  height: 200px;
+  width: 30%;
+  height: 150px;
+  margin-top: 15px;
 }
 
 .logo-details h6 {
@@ -202,7 +204,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  margin: 20px 25px;
+  margin: 30px 25px;
   padding: 50px 10px;
 }
 
@@ -399,6 +401,13 @@
     text-align: center;
     width: 70%;
     margin: 0 15%;
+  }
+
+  .logo-details img {
+    width: 30%;
+    height: 150px;
+    margin-top: 15px;
+    margin-left: -30px;
   }
 
   #header-text {

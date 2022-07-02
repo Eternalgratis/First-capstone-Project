@@ -24,19 +24,10 @@ This project shows my acquired knowledge so far;
 - Twitter: [@eternalgratis](https://twitter.com/eternalgratis)
 - LinkedIn: [@eternalgratis](https://www.linkedin.com/in/titilope-apuabi-69a98719b/)
 
-### Collaborators
+### Solo
 
-👤 **Diego Luna Granados** _(Week 4: Mobile Menu & Popup window)_
-
-- GitHub: [@SlowKingV](https://github.com/SlowKingV)
-- Twitter: [@SlowKingVI](https://twitter.com/SlowKingVI)
-- LinkedIn: [Diego Luna Granados](https://www.linkedin.com/in/diego-luna-granados/)
-
-👤 **Diego Luna Granados** _(Week 4: Mobile version nav button)_
-
-- GitHub: [@SlowKingV](https://github.com/SlowKingV)
-- Twitter: [@SlowKingVI](https://twitter.com/SlowKingVI)
-- LinkedIn: [Diego Luna Granados](https://www.linkedin.com/in/diego-luna-granados/)
+## Loom Video
+https://loom.com/share/1c294a8709a44852a0fb935b7b430483
 
 ## 🤝 Contributing
 
@@ -57,7 +48,7 @@ Original design idea by Cindy Shin in Behance
 ## To get a local copy up and running follow these simple steps.
 
 Clone the project by using terminal.
-https://github.com/Eternalgratis/Portfolio.git
+https://github.com/Eternalgratis/First-capstone-Project
 
 cd First-capstone-Project
 

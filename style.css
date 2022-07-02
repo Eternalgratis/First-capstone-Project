@@ -292,7 +292,6 @@ body {
 }
 
 .all-viewmore {
-  display: block;
   margin-top: 10px;
   padding-top: 10px;
 }
@@ -304,6 +303,7 @@ body {
 }
 
 .mobile-speakers {
+  display: block;
   margin-bottom: 25px;
   width: 100%;
 }

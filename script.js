@@ -10,16 +10,17 @@ document.querySelectorAll('.ham-item').forEach((n) => n.addEventListener('click'
   desktopnav.classList.remove('active');
 }));
 // ............Adding event to close icon on menu.............................
-document.querySelector('.close-icon').addEventListener('click', () => {
-  menu.classList.remove('active');
-  desktopnav.classList.remove('active');
-});
+// document.querySelector('.close-icon').addEventListener('click', () => {
+//   menu.classList.remove('active');
+//   desktopnav.classList.remove('active');
+// });
 
 // Objects
+
 const projectContainerArr = [
   {
     headline: 'Featured Speakers',
-    image: '../images/ministersssss.jfif',
+    image: './images/ministersssss.jfif',
     name: 'Eternalgratis',
     Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
@@ -27,7 +28,7 @@ const projectContainerArr = [
   },
   {
     headline: 'Featured Speakers',
-    image: '../images/ministers.jfif',
+    image: './images/ministers.jfif',
     name: 'Eternalgratis',
     Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
@@ -35,7 +36,7 @@ const projectContainerArr = [
   },
   {
     headline: 'Featured Speakers',
-    image: '../images/ministerss.jfif',
+    image: './images/ministerss.jfif',
     name: 'Eternalgratis',
     Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
@@ -43,7 +44,7 @@ const projectContainerArr = [
   },
   {
     headline: 'Featured Speakers',
-    image: '../images/ministersss.jfif',
+    image: './images/ministersss.jfif',
     name: 'Eternalgratis',
     Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
@@ -51,7 +52,7 @@ const projectContainerArr = [
   },
   {
     headline: 'Featured Speakers',
-    image: '../images/ministerssss.jfif',
+    image: './images/ministerssss.jfif',
     name: 'Eternalgratis',
     Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
@@ -59,13 +60,14 @@ const projectContainerArr = [
   },
   {
     headline: 'Featured Speakers',
-    image: '../images/ministersssss.jfif',
+    image: './images/ministersssss.jfif',
     name: 'Eternalgratis',
     Text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     Subtext:
       'Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam',
   },
 ];
+
 const featureSection = document.querySelector('.all-viewmore');
 for (let i = 0; i < projectContainerArr.length; i += 1) {
   featureSection.innerHTML = `
@@ -121,61 +123,6 @@ for (let i = 0; i < projectContainerArr.length; i += 1) {
     </div>
   </div>
   <button id="mobile-link1">MORE</button>
-  </div>`;
-}
-
-// const capStoneObj = [
-//   {
-//     Header: "FeaturedSpeakers",
-//     Image: "../images/minister.jfif",
-//     Name: "eternalgratis",
-//     Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//     Subtext:
-//       "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
-//   },
-//   {
-//     Header: "FeaturedSpeakers",
-//     Image: "../images/ministers.jfif",
-//     Name: "eternalgratis",
-//     Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//     Subtext:
-//       "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
-//   },
-//   {
-//     Header: "FeaturedSpeakers",
-//     Image: "../images/ministerss.jfif",
-//     Name: "eternalgratis",
-//     Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//     Subtext:
-//       "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
-//   },
-//   {
-//     Header: "FeaturedSpeakers",
-//     Image: "../images/ministersss.jfif",
-//     Name: "eternalgratis",
-//     Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//     Subtext:
-//       "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
-//   },
-//   {
-//     Header: "FeaturedSpeakers",
-//     Image: "../images/ministerssss.jfif",
-//     Name: "eternalgratis",
-//     Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//     Subtext:
-//       "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
-//   },
-//   {
-//     Header: "FeaturedSpeakers",
-//     Image: "../images/ministersssss.jfif",
-//     Name: "eternalgratis",
-//     Text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-//     Subtext:
-//       "Ratione cumque nostrum dolor unde doloribus at culpa eligendi impedit iste quam",
-//   },
-// ];
-// let speakers = document.querySelector(".all-viewmore");
-// for (let i = 0; i < capStoneObj.length; i += 1) {
-//   speakers.innerHTML = `
-
-// }
+  </div>
+  `;
+};
