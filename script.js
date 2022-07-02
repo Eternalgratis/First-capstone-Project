@@ -9,11 +9,6 @@ document.querySelectorAll('.ham-item').forEach((n) => n.addEventListener('click'
   menu.classList.remove('active');
   desktopnav.classList.remove('active');
 }));
-// ............Adding event to close icon on menu.............................
-// document.querySelector('.close-icon').addEventListener('click', () => {
-//   menu.classList.remove('active');
-//   desktopnav.classList.remove('active');
-// });
 
 // Objects
 
@@ -125,4 +120,4 @@ for (let i = 0; i < projectContainerArr.length; i += 1) {
   <button id="mobile-link1">MORE</button>
   </div>
   `;
-};
+}
