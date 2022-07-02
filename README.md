@@ -5,9 +5,8 @@ This project shows my acquired knowledge so far;
 > The capstone project demonstrates Javascript, Html and Css.
 > This is also a project that shows my proficiency as I go through Microverse. It is a work-in-progress and I hope to make it a masterpiece.
 
-## Live Demo
-
-[Link to Live Demo](https://eternalgratis.github.io/First-capstone-Project/)
+## Live Loom Video
+[Live Loom Video] (https://loom.com/share/1c294a8709a44852a0fb935b7b430483)
 
 ## Built With
 
