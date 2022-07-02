@@ -124,7 +124,7 @@ body {
   width: 96%;
   font-size: 32px;
   padding: 5px 16px;
-  background-image: url(../images/oreclor.jpg);
+  background-image: url(./images/oreclor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20% 20%;
@@ -141,7 +141,7 @@ body {
   width: 100%;
   font-size: 65px;
   padding: 5px 16px;
-  background-image: url(../images/oreclor.jpg);
+  background-image: url(./images/oreclor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20% 20%;
