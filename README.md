@@ -6,7 +6,7 @@ This project shows my acquired knowledge so far;
 > This is also a project that shows my proficiency as I go through Microverse. It is a work-in-progress and I hope to make it a masterpiece.
 
 ## Live Loom Video
-[Live Loom Video] (https://loom.com/share/1c294a8709a44852a0fb935b7b430483)
+[Live Loom Video] (https://www.loom.com/share/7cf721cad09342588145a4c1372f7f96)
 
 ## Built With
 
