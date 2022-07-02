@@ -8,8 +8,8 @@
 }
 
 .main-header {
-  background-color: #272a31;
-  display: none;
+  /* background-color: #272a31; */
+  display: block;
 }
 
 #header-list {
@@ -33,23 +33,74 @@
   transition: 0.5s ease;
 }
 
-.hamburger {
-  /* background-color: #000; */
+.mobile-nav {
   display: block;
+  background-color: #000;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  margin-left: 80%;
+  color: #000;
+  margin-top: -40px;
+  z-index: 5;
+  position: fixed;
 }
 
 .bar {
   display: block;
-  width: 30px;
-  height: 6px;
-  margin: 5px;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  z-index: 999;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .desktop-nav {
-  display: none;
-  justify-content: space-between;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  gap: 2em;
+  padding-left: 30px;
+  transform: translateX(100%);
+  transition: 0.7s;
+  background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
 }
+
+.desktop-nav.active {
+  transform: translateX(0%);
+}
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 5px 16px;
+  font-size: 20px;
+  color: #000;
+}
+
 
 .header {
   background-color: rgb(39, 42, 49, 0.2);
@@ -133,6 +184,7 @@
   width: 90%;
   text-align: center;
 }
+
 
 .logo-details {
   display: flex;
@@ -269,7 +321,6 @@
 @media only screen and (min-width: 768px) {
   .main-header {
     background-color: #272a31;
-    display: block;
   }
 
   #header-list {
@@ -294,23 +345,28 @@
   }
 
   .desktop-nav {
+    position: relative;
     display: flex;
-    margin: 20px;
-    justify-content: space-between;
-    height: 20px;
+    transform: translateX(10px);
+    flex-direction: row;
+    background-image: none;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 1.5em;
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
-  .Logo {
-    margin-left: 30px;
-    margin-top: -85px;
-    height: 150px;
-    width: 200px;
+  .hamburger {
+    display: none;
   }
 
   .nav-menu {
     display: flex;
     padding: 0 5%;
-    margin-top: -25px;
   }
 
   .nav-items {

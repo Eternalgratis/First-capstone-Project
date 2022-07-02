@@ -12,7 +12,7 @@ body {
 }
 
 .main-header {
-  background-color: #272a31;
+  display: block;
 }
 
 #header-list {
@@ -36,12 +36,44 @@ body {
   transition: 0.5s ease;
 }
 
-.hamburger {
-  background-color: #000;
+.mobile-nav {
   display: block;
 }
 
-.bar1 {
+.hamburger {
+  display: block;
+  cursor: pointer;
+  margin-left: 80%;
+  color: #000;
+  margin-top: -40px;
+  z-index: 5;
+  position: fixed;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  z-index: 999;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* .bar1 {
   display: block;
   width: 30px;
   height: 6px;
@@ -60,10 +92,37 @@ body {
   width: 30px;
   height: 6px;
   margin: 5px;
-}
+} */
 
 .desktop-nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  gap: 2em;
+  padding-left: 30px;
+  transform: translateX(100%);
+  transition: 0.7s;
+  background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.desktop-nav.active {
+  transform: translateX(0%);
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 5px 16px;
+  font-size: 20px;
+  color: #000;
 }
 
 .header {
@@ -371,17 +430,22 @@ body {
 
 @media only screen and (min-width: 768px) {
   .desktop-nav {
+    position: relative;
     display: flex;
-    margin: 30px;
-    justify-content: space-between;
-    height: 40px;
+    transform: translateX(10px);
+    flex-direction: row;
+    background-image: none;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 1.5em;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
-  .Logo {
-    margin-left: 30px;
-    margin-top: -60px;
-    height: 150px;
-    width: 200px;
+  .main-header {
+    background-color: #272a31;
   }
 
   .nav-menu {
@@ -389,23 +453,15 @@ body {
     padding: 0 5%;
   }
 
-  .nav-items {
-    list-style: none;
-    padding: 5px 16px;
-    font-size: 20px;
-    color: #000;
-  }
-
-  .nav-items a {
-    text-decoration: none;
-    color: #000;
-  }
-
   .desktop-nav li {
     margin-left: 20px;
   }
 
   .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
     display: none;
   }
 
