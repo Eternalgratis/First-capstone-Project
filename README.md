@@ -7,7 +7,7 @@ This project shows my acquired knowledge so far;
 
 ## Live Demo
 
-[Link to Live Demo](https://eternalgratis.github.io/Portfolio/)
+[Link to Live Demo](https://eternalgratis.github.io/First-capstone-Project/)
 
 ## Built With
 
